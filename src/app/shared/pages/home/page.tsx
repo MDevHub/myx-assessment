@@ -1,6 +1,7 @@
 
 import OverviewLayout from "@/app/shared/components/overview/layout/OverviewLayout" 
 import Trending from "@/app/shared/components/trending/Trending"
+import ChatButton from "@/app/shared/components/chatButton/ChatButton"
 
 
 const HomePage = () => {
@@ -10,6 +11,8 @@ const HomePage = () => {
             <OverviewLayout />
 
             <Trending />
+
+            <ChatButton />
          </div>
       </div>
    )

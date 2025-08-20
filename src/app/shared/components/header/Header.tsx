@@ -45,7 +45,7 @@ import { Modal, Drawer, IconButton, TextField } from "@mui/material";
 
                {/* Icons Right */}
                <div className="flex items-center gap-4">
-                  <IconButton color="inherit">
+                  <IconButton color="inherit" className="">
                      <NotificationsIcon fontSize="large"/>
                   </IconButton>
 
@@ -86,10 +86,10 @@ import { Modal, Drawer, IconButton, TextField } from "@mui/material";
                   </Drawer>
 
                   {/* Disabled / Static Icons */}
-                  <IconButton color="inherit">
+                  <IconButton color="inherit" className="hidden sm:flex">
                      <ChatIcon fontSize="large"/>
                   </IconButton>
-                  <IconButton color="inherit">
+                  <IconButton color="inherit" className="hidden sm:flex">
                      <AccountCircleIcon fontSize="large"/>
                   </IconButton>
                </div>
