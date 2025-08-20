@@ -18,16 +18,16 @@
    return (
       <div className="py-4">
          {/* Header */}
-         <div className="px-4 mb-4 flex justify-between items-center">
-         <div>
-            <h2 className="text-lg font-bold">Sales Overview</h2>
-            <p className="text-sm text-gray-500">
-               Showing overview Jan 2022 - Sep 2022
-            </p>
-         </div>
-         <button className="text-sm font-medium border border-gray-200 rounded-full py-3 px-6 cursor-pointer hover:border-gray-300">
-            View Transactions
-         </button>
+         <div className="px-4 mb-4 sm:flex justify-between items-center">
+            <div>
+               <h2 className=" sm:text-[16px] md:text-lg font-bold">Sales Overview</h2>
+               <p className="mb-5 text-xs md:text-sm text-gray-500">
+                  Showing overview Jan 2022 - Sep 2022
+               </p>
+            </div>
+            <button className="text-[16px] md:text-sm font-medium border border-gray-200 rounded-full py-3 px-6 cursor-pointer hover:border-gray-300">
+               View Transactions
+            </button>
          </div>
 
          {/* Filters row */}
