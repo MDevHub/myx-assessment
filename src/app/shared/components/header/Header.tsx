@@ -60,21 +60,22 @@
                <CalendarMonth fontSize="large"/>
                </IconButton>
                <Drawer
-               anchor="right"
-               open={openCalendar}
-               onClose={() => setOpenCalendar(false)}
-               disableScrollLock
-               PaperProps={{
-                  sx: {
-                     position: "fixed",
-                     top: "83px",
-                     height:  "calc(100vh - 83px)",
-                     width: "430px",
-                     overflowY: "auto", 
-                  },
-               }}
-               >
-               <CalendarPage onClose={() => setOpenCalendar(false)}/>
+                  anchor="right"
+                  open={openCalendar}
+                  onClose={() => setOpenCalendar(false)}
+                  disableScrollLock
+                  PaperProps={{
+                     sx: {
+                        position: "fixed",
+                        top: "83px",
+                        height: "calc(100vh - 83px)",
+                        width: { xs: "70vw", sm: "430px" }, // responsive width
+                        maxWidth: "100vw",
+                        overflowY: "auto",
+                     },
+                  }}
+                  >
+                  <CalendarPage onClose={() => setOpenCalendar(false)}/>
                </Drawer>
                <IconButton color="inherit">
                <ChatIcon fontSize="large"/>
