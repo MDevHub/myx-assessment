@@ -12,7 +12,7 @@ const ChatButton: FC = () => {
       sx={{
         position: "fixed",
         bottom: 20,
-        right: 60,
+        right: 40,
         bgcolor: "#1f2937", // custom green
         "&:hover": { bgcolor: "#1f2937" },
         zIndex: 1300, // stays above drawers & content
