@@ -35,8 +35,8 @@
          <div className="flex items-center justify-between text-white px-4 sm:px-6 md:px-12 lg:px-14 py-4">
             {/* Logo - always visible */}
             <div className="flex items-center">
-               <SettingsIcon className="font-thin"/>
-               <span className="font-semibold text-2xl">myxellia</span>
+               <SettingsIcon className="font-thin items-center" fontSize="inherit"/>
+               <span className="font-semibold text-xl sm:text-2xl">myxellia</span>
             </div>
 
             {/* Icons Right - desktop */}
@@ -47,14 +47,14 @@
                <IconButton color="inherit" onClick={() => setOpenBudget(true)}>
                <LocalConvenienceStoreRoundedIcon fontSize="large" />
                </IconButton>
-               <Modal 
-               open={openBudget} 
-               onClose={() => setOpenBudget(false)}
-               disableScrollLock   
-               >
-               <div className="rounded-2xl w-[400px] mx-auto mt-16 shadow-lg">
-                  <Budget />
-               </div>
+              <Modal 
+                  open={openBudget} 
+                  onClose={() => setOpenBudget(false)}
+                  disableScrollLock   
+                  >
+                  <div className="rounded-2xl mx-auto mt-16 shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg">
+                     <Budget />
+                  </div>
                </Modal>
                <IconButton color="inherit" onClick={() => setOpenCalendar(true)}>
                <CalendarMonth fontSize="large"/>
@@ -95,7 +95,7 @@
                onClose={() => setOpenBudget(false)}
                disableScrollLock   
                >
-               <div className="rounded-2xl w-[400px] mx-auto mt-16 shadow-lg">
+  <div className="rounded-2xl mx-auto mt-16 shadow-lg w-full max-w-xs sm:max-w-md md:max-w-lg">
                   <Budget />
                </div>
                </Modal>
@@ -111,9 +111,10 @@
                   sx: {
                      position: "fixed",
                      top: "83px",
-                     height:  "calc(100vh - 83px)",
-                     width: "430px",
-                     overflowY: "auto", 
+                     height: "calc(100vh - 83px)",
+                     width: "100%",
+                     maxWidth: { xs: "320px", sm: "430px" },
+                     overflowY: "auto",
                   },
                }}
                >
